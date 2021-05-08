@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    username: root
+    password: xxxxx
+    url: jdbc:mysql://localhost:3306/fleamarket?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database: mysql
+    show-sql: true
+    open-in-view: false
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+
+file-save-path: D:/images/
+
+aliyun:
+  oss:
+    file:
+      bucketname: "xxxxx"
+      keysecret: "xxxxx"
+      keyid: "xxxxx"
+      endpoint: "oss-cn-beijing.aliyuncs.com"
+
